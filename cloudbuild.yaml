@@ -6,8 +6,6 @@ steps:
   - 'us-west2-docker.pkg.dev/$PROJECT_ID/markdown-blog/markdown-blog:$SHORT_SHA'
   - '.'
   automapSubstitutions: true
-images:
-- us-west2-docker.pkg.dev/$PROJECT_ID/markdown-blog/markdown-bog:$SHORT_SHA
 
 - name: 'gcr.io/cloud-builders/gcloud'
   id: Generate manifest
@@ -27,3 +25,6 @@ images:
   env:
   - 'CLOUDSDK_COMPUTE_REGION=us-west2'
   - 'CLOUDSDK_CONTAINER_CLUSTER=markdown-blog'
+
+images:
+- us-west2-docker.pkg.dev/$PROJECT_ID/markdown-blog/markdown-bog:$SHORT_SHA
