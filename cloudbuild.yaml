@@ -6,7 +6,7 @@ steps:
 images:
 - us-west2-docker.pkg.dev/$PROJECT_ID/markdown-blog/markdown-bog:$SHORT_SHA
 
-- name:
+- name: 'gcr.io/cloud-builders/gcloud'
   id: Generate manifest
   entrypoint: /bin/sh
   args:
