@@ -27,7 +27,7 @@ steps:
   - 'CLOUDSDK_CONTAINER_CLUSTER=markdown-blog'
 
 images:
-- 'us-west2-docker.pkg.dev/$PROJECT_ID/markdown-blog/markdown-bog:$SHORT_SHA'
+- 'us-west2-docker.pkg.dev/$PROJECT_ID/markdown-blog/markdown-blog:$SHORT_SHA'
 
 options:
   logging: CLOUD_LOGGING_ONLY
