@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: markdown-blog-backend
-        image: us-west2-docker.pkg.dev/markdown-blog-leeli/GOOGLE_CLOUD_PROJECT/markdown-bog:COMMIT_SHA
+        image: us-west2-docker.pkg.dev/GOOGLE_CLOUD_PROJECT/markdown-blog/markdown-bog:COMMIT_SHA
         ports:
         - containerPort: 5000
 ---
