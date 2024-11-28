@@ -26,7 +26,7 @@ metadata:
   name: markdown-blog-backend-service
 spec:
   selector:
-    app: markdown-blog-backend-service
+    app: markdown-blog-backend
   ports:
   - protocol: TCP
     port: 5000
